@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Javascript Foundations</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+  </head>
+
+  <body>
+    <div>
+      <form>
+        <input type="text" id="serverName" placeholder="server's name" />
+        <button id="createServer">Create Server</button>
+        <div><strong>Servers:</strong> <span id="servers"></span></div>
+      </form>
+    </div>
+
+    <div>
+      <form>
+        <input type="text" id="partyName" placeholder="party" />
+        <select name="tablesSelect" id="tablesSelect">
+          <option value="">Select Table</option>
+        </select>
+        <select name="serversSelect" id="serversSelect">
+          <option value="">Select Server</option>
+        </select>
+        <button id="seatParty">Seat Customer</button>
+      </form>
+    </div>
+
+    <div id="tables"></div>
+
+    <script src="src/index.ts"></script>
+  </body>
+</html>
